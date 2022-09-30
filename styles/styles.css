@@ -41,12 +41,28 @@ header li {
   margin-top: 34px;
 }
 
-header a {
+header li a {
   color: #ffffff;
   padding: 5px 5px;
   font-size: 18px;
+  position: relative;
+  transition: 1s;
 }
 
+header li a:before{
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s;
+}
+
+header li a:hover::before {
+  width: 100%;
+}
 /* ------------- Main ------------- */
 
 h2 {
@@ -61,12 +77,20 @@ article {
   margin: 60px 0px 60px 60px;
 }
 
+
 .musicbox {
   width: 300px;
   height: 250px;
   border-style: solid;
   border-width: 1px;
   margin-left: 100px;
+  transition: 0.5s;
+}
+
+.musicbox:hover {
+  box-shadow: 0px 1px 5px #000000;
+  cursor: pointer;
+
 }
 
 .musicimg {
@@ -77,6 +101,7 @@ article {
   margin-top: 66px;
   margin-left: 8px;
 }
+
 
 h3 {
   margin: 160px 0px 10px 14px
@@ -99,6 +124,13 @@ h3 {
   background-image: url(../imgs/like.png);
   position: absolute;
   margin-left: 246px;
+  transition: 0.6s;
+}
+
+.musicboxicon:hover {
+  background-image: url(../imgs/like2.png);
+  cursor: pointer;
+  transition: 0.6s;
 }
 
 .des a {
@@ -106,6 +138,22 @@ h3 {
   margin-top: 5px;
   font-size: 12px;
   color: #000000;
+  position: relative;
+}
+
+.des a:before{
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s;
+}
+
+.des a:hover::before {
+  width: 100%;
 }
 
 /* ------------- Footer ------------- */
@@ -150,7 +198,7 @@ footer {
   color: #ffffff;
   clear: both;
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 
@@ -166,7 +214,14 @@ footer {
   width: 280px;
   height: 360px;
   margin-left: 60px;
+  transition: 0.6s;
+  border-radius: 10px;
+}
 
+.playlists2:hover {
+  background-color: #E5E5E5;
+  box-shadow: 4px 4px 4px #E5E5E5;
+  cursor: pointer;
 }
 
 .playlistsh2 {
@@ -230,11 +285,22 @@ footer {
 
 .facebook {
   background-image: url(../imgs/fb.png);
+  transition: 0.6s;
+}
+
+.facebook:hover{
+  background-image: url(../imgs/fb2.png);
 }
 
 .instagram {
   background-image: url(../imgs/instagram.png);
+  transition: 0.6s;
 }
+
+.instagram:hover{
+  background-image: url(../imgs/instagram2.png);
+}
+
 
 .social .facebook img , .social .instagram img {
   width: 100%;
