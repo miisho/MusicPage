@@ -215,12 +215,12 @@ footer {
   height: 360px;
   margin-left: 60px;
   transition: 0.6s;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .playlists2:hover {
-  background-color: #E5E5E5;
-  box-shadow: 4px 4px 4px #E5E5E5;
+  background-color: #eeeeee;
+  box-shadow: 2px 6px 10px #eeeeee;
   cursor: pointer;
 }
 
@@ -285,16 +285,17 @@ footer {
 
 .facebook {
   background-image: url(../imgs/fb.png);
-  transition: 0.6s;
+  transition: 0.7s;
 }
 
 .facebook:hover{
   background-image: url(../imgs/fb2.png);
+  transition: 0.7s;
 }
 
 .instagram {
   background-image: url(../imgs/instagram.png);
-  transition: 0.6s;
+  transition: 0.7s;
 }
 
 .instagram:hover{
